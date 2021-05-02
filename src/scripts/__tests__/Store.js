@@ -5,7 +5,7 @@ describe("filter", () => {
   let store;
   beforeEach(() => {
     store = new Store();
-    store.setDeals(mockData);
+    store.setDeals(mockData.deals);
   });
 
   // Tests that meet filter criteria
