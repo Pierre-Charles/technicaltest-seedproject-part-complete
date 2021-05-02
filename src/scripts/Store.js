@@ -31,6 +31,11 @@ class Store extends Observable {
         );
       });
     }
+
+    if (providerFilter) {
+      deals = deals.filter(({ provider }) => provider.id === providerFilter);
+    }
+
     return deals;
   }
 
