@@ -22,12 +22,12 @@
   &__feature__container {
     @include breakpoint(min_small) {
       grid-column: 4 / 10;
+      @include flexBetween;
     }
     grid-column: 1 / -1;
     gap: 2em;
     padding: 1em;
-    @include flexBetween;
-    align-items: flex-start;
+    @include flexStart;
   }
 
   &__products__container {
