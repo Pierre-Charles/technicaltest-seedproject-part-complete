@@ -1,5 +1,7 @@
 # Notes:
 
+![screenshot](finalVersion.png)
+
 - I have completed the test to what I think is a good standard, however, I am looking forward to hearing feedback on how I have approached this task.
 - I have added a couple of extra tests to further check whether the filtering worked as expected.
 - While creating the unit tests I have also made a helper function `getProviderId` which simply returned the provider's id when given its name, this was made for passing in the name of the providers into the tests rather than its id.
