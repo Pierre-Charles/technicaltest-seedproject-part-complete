@@ -15,7 +15,7 @@
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
       version="1.1"
-      style="display: none;"
+      style="display: none"
     >
       <symbol id="icon-wifi" viewBox="0 0 48 48" aria-hidden="true">
         <path
@@ -156,33 +156,33 @@
 
     <!-- Templates -->
     <script id="template-deal" type="text/template">
-      <article class="deal shadow">
-          <header class="deal__header">
+      <article class="deal border">
+        <header class="deal__header">
             <h3 class="deal__title">{{ title }}</h3>
+            <ul class="deal__feature__icons">{{ productList }}</ul>
           </header>
-
-          <div class="deal__features row">
-            <div class="deal__feature col">
-              <div class="deal__feature-label">Provider</div>
-              <div class="deal__feature-value">{{ provider }}</div>
-            </div>
-            <div class="deal__feature col">
+        <div class="deal__provider__container">
+          {{ image }}
+        </div>
+        <div class="deal__feature__container">
+          <div class="deal__feature">
+            <div class="deal__feature-value">{{ upfrontCost }}</div>
               <div class="deal__feature-label">Upfront Cost</div>
-              <div class="deal__feature-value">{{ upfrontCost }}</div>
             </div>
-            <div class="deal__feature col">
-              <div class="deal__feature-label">Total Cost</div>
+            <div class="deal__feature">
               <div class="deal__feature-value">{{ totalCost }}</div>
+              <div class="deal__feature-label">Total Cost</div>
             </div>
-            <div class="deal__feature col">
-              <div class="deal__feature-label">Contract Length</div>
+            <div class="deal__feature">
               <div class="deal__feature-value">{{ contractLength }}</div>
+              <div class="deal__feature-label">Contract Length</div>
             </div>
+        </div>
+          <div class="deal__products__container">
+            <div class="deal__feature-hero-value">{{ monthlyCost }}</div>
+            <div class="deal__feature-label">per month</div>
+            <div class="deal__cta">{{ ctaProviderSite }}</div>
           </div>
-
-          <footer class="deal__footer">
-            <ul class="deal__products">{{ productList }}</ul>
-          </footer>
       </article>
     </script>
 
