@@ -1,10 +1,10 @@
 # Notes:
 
-- I have completed the test to what I think is a good standard, however I am looking forward to hearing feedback on how I have approached this task.
+- I have completed the test to what I think is a good standard, however, I am looking forward to hearing feedback on how I have approached this task.
 - I have added a couple of extra tests to further check whether the filtering worked as expected.
 - While creating the unit tests I have also made a helper function `getProviderId` which simply returned the provider's id when given its name, this was made for passing in the name of the providers into the tests rather than its id.
-- I have also spent some time making the frontend look aesthetically pleasing. Although this wansn't required, I felt it was needed to add an overall good experience and also get a chance to show how passionate I am towards UX/UI.
-- The following addiional items were added to the front end:
+- I have also spent some time making the frontend look aesthetically pleasing. Although this wasn't required, I felt it was needed to add an overall good experience and also get a chance to show how passionate I am towards UX/UI.
+- The following additional items were added to the front end:
   - Provider logo along with function that returns the provider's logo `getImage()`
   - Cost per month section that was worked out by using the already provided contract length and total cost `calculateMonthlyCost`
   - Call to Action button that simply takes the user to the provider's website, this is done through the `getProviderSite` function which simply returns the provider's website given its id
