@@ -1,3 +1,5 @@
+@import "./variables";
+
 .site-trunk {
   max-width: 1260px;
   margin-left: auto;
@@ -16,9 +18,13 @@
   padding-right: 10px;
 }
 
-.shadow {
-  border-radius: 5px;
-  padding: 12px;
-  box-shadow: 0 1px 6px #ccc;
-  background-color: #fff;
+.border {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: $white;
+  border: 1px solid $grey-border;
+  &:hover {
+    border: 1px solid $dark-grey-border;
+    background-color: lighten(#7c4182, 55%);
+  }
 }
