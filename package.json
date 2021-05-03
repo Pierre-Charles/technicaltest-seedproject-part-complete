@@ -22,9 +22,11 @@
     "rollup": "1.25.2",
     "rollup-plugin-livereload": "1.0.4",
     "rollup-plugin-sass": "1.2.2",
-    "rollup-plugin-serve": "1.0.1"
+    "rollup-plugin-serve": "1.0.1",
+    "rollup-plugin-url": "^3.0.1"
   },
   "resolutions": {
     "babel-core": "7.0.0-bridge.0"
-  }
+  },
+  "dependencies": {}
 }
