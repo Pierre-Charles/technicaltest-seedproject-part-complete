@@ -1,6 +1,51 @@
+@import "../variables";
+@import "../mixins";
+
 .deal {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 0.5em 1em;
+
+  &__provider__container {
+    grid-column: 1 / 4;
+    @include flexCenter;
+    img {
+      width: 120px;
+      height: auto;
+    }
+  }
+
+  &__feature__container {
+    grid-column: 4 / 10;
+    @include flexBetween;
+    gap: 2em;
+    padding: 1em;
+  }
+
+  &__products__container {
+    padding: 1em;
+    grid-column: 10 / -1;
+    @include flexColumnCenter;
+  }
+
+  &__cta {
+    background-color: $purple;
+    padding: 1em;
+    border-radius: $std-radius;
+    margin-top: 1em;
+    a {
+      color: $white;
+      text-decoration: none;
+      font-weight: 700;
+    }
+  }
+
   &__header {
-    margin-bottom: 16px;
+    grid-column: 1 / -1;
+    padding: 1em;
+    background-color: $grey;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__footer {
@@ -12,13 +57,11 @@
     font-weight: 700;
   }
 
-  &__features {
+  &__feature__icons {
     display: flex;
-  }
-
-  &__feature {
-    flex: 1 1 0;
-    width: 0;
+    li:not(:last-child) {
+      margin-right: 5px;
+    }
   }
 
   &__feature-label {
@@ -29,6 +72,11 @@
   &__feature-value {
     font-weight: 700;
     font-size: 18px;
+  }
+
+  &__feature-hero-value {
+    font-weight: 700;
+    font-size: 28px;
   }
 
   &__products > li {
