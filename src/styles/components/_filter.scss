@@ -1,32 +1,41 @@
-.filters {
-  position: sticky;
-  top: 20px;
+@import "../variables";
+@import "../mixins";
 
-  &__title {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
+.filters {
+  top: 0;
 
   &__group {
-    margin-top: 14px;
-    padding-top: 14px;
-    border-top: 1px solid #eee;
-  }
-}
-
-.filter {
-  display: block;
-
-  &:not(:last-child) {
-    margin-bottom: 8px;
+    background-color: $white;
+    display: flex;
+    gap: 1em;
+    padding: 2em;
+    flex-wrap: wrap;
   }
 
-  &__label {
-    font-size: 14px;
-    vertical-align: top;
-  }
+  &__chip {
+    margin: 0.5em 0;
+    input[type="checkbox"] {
+      display: none;
+    }
 
-  &__checkbox {
-    margin-right: 4px;
+    input[type="checkbox"] + label {
+      font-size: 12px;
+      cursor: pointer;
+      border-radius: 50px;
+      background-color: $white;
+      border: solid 1px $dark-grey-border;
+      padding: 0.5rem 2rem;
+      margin: 0.5em 0;
+      -moz-user-select: -moz-none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    input[type="checkbox"]:checked + label {
+      border: 2px solid $purple;
+      color: $purple;
+      font-weight: 700;
+    }
   }
 }
