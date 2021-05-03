@@ -130,7 +130,7 @@ class Template {
         link = "https://shop.ee.co.uk/broadband";
         break;
     }
-    return `<a href=${link} target='_blank'>Grab this deal!</a>`;
+    return `<a href=${link} target='_blank' rel='noopener'>Grab this deal!</a>`;
   }
 }
 
