@@ -40,6 +40,10 @@
   }
 
   &__cta {
+    @include breakpoint(max_small) {
+      width: 100%;
+      text-align: center;
+    }
     background-color: $purple;
     padding: 1em;
     border-radius: $std-radius;
