@@ -18,6 +18,7 @@
 - Add sorting by contract length
 - Add sorting by lowest/highest cost (overall, monthly, upfront)
 - Add icons to the features section (better UX)
+- Make filters visible by pressing a filter icon when on mobile devices
 
 # Decision Technologies Front-End Technical Test
 

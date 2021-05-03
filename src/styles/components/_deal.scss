@@ -6,6 +6,7 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 0.5em 1em;
+  margin: 1.5em 0;
 
   &__provider__container {
     @include breakpoint(min_small) {
