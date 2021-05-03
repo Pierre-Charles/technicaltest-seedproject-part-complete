@@ -23,6 +23,8 @@
   border-top-right-radius: 5px;
   background-color: $white;
   border: 1px solid $grey-border;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
   &:hover {
     border: 1px solid $dark-grey-border;
     background-color: lighten(#7c4182, 55%);
