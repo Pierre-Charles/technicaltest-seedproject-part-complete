@@ -4,6 +4,13 @@
   justify-content: center;
 }
 
+@mixin flexColumnCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 @mixin flexReverse {
   display: flex;
   flex-direction: row-reverse;
@@ -15,4 +22,10 @@
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+}
+
+@mixin flexBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
