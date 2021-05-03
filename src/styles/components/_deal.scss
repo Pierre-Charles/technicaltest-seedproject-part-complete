@@ -1,5 +1,6 @@
 @import "../variables";
 @import "../mixins";
+@import "../breakpoints";
 
 .deal {
   display: grid;
@@ -55,6 +56,14 @@
   &__title {
     font-size: 18px;
     font-weight: 700;
+  }
+
+  &__error {
+    font-size: 24px;
+    color: $purple;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 3em;
   }
 
   &__feature__icons {
