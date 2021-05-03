@@ -11,7 +11,7 @@ class ViewDeals {
       this.dealList.innerHTML = htmlToAppend;
     } else {
       this.dealList.innerHTML =
-        "<p>Oops, it looks like we don't have any deals that meet your requirements</p>";
+        "<p class='deal__error'>Oops, it looks like we don't have any deals that meet your requirements.</p>";
     }
   }
 
