@@ -39,103 +39,102 @@
         <h1 class="site-header__title">Decision Technologies</h1>
       </div>
     </header>
-
     <main>
       <div class="site-trunk">
         <div class="main row">
-          <div class="filters-container col">
-            <div class="filters shadow">
-              <h2 class="filters__title">Filters</h2>
-              <div class="filters__group">
-                <label class="filter">
-                  <input
-                    class="filter__checkbox js-filter-product"
-                    name="filter-product"
-                    type="checkbox"
-                    value="broadband"
-                    disabled="disabled"
-                  />
-                  <span class="filter__label">Broadband</span>
-                </label>
-
-                <label class="filter">
-                  <input
-                    class="filter__checkbox js-filter-product"
-                    name="filter-product"
-                    type="checkbox"
-                    value="mobile"
-                    disabled="disabled"
-                  />
-                  <span class="filter__label">Mobile</span>
-                </label>
-
-                <label class="filter">
-                  <input
-                    class="filter__checkbox js-filter-product"
-                    name="filter-product"
-                    type="checkbox"
-                    value="tv"
-                    disabled="disabled"
-                  />
-                  <span class="filter__label">TV</span>
-                </label>
+          <div class="filters">
+            <div class="filters__group">
+              <div class="filters__chip">
+                <input
+                  class="filter__checkbox js-filter-product"
+                  id="broadband"
+                  name="filter-product"
+                  type="checkbox"
+                  value="broadband"
+                  disabled="disabled"
+                />
+                <label for="broadband">Broadband</label>
+              </div>
+              <div class="filters__chip">
+                <input
+                  class="filter__checkbox js-filter-product"
+                  id="mobile"
+                  name="filter-product"
+                  type="checkbox"
+                  value="mobile"
+                  disabled="disabled"
+                />
+                <label for="mobile">Mobile</label>
+              </div>
+              <div class="filters__chip">
+                <input
+                  class="filter__checkbox js-filter-product"
+                  id="tv"
+                  name="filter-product"
+                  type="checkbox"
+                  value="tv"
+                  disabled="disabled"
+                />
+                <label for="tv">TV</label>
+              </div>
+              <div class="filters__chip">
+                <input
+                  class="filter__checkbox js-filter-provider"
+                  id="bt"
+                  name="filter-provider"
+                  type="checkbox"
+                  value="3"
+                  disabled="disabled"
+                />
+                <label for="bt">BT</label>
               </div>
 
-              <div class="filters__group">
-                <label class="filter">
-                  <input
-                    class="filter__checkbox js-filter-provider"
-                    name="filter-provider"
-                    type="checkbox"
-                    value="3"
-                    disabled="disabled"
-                  />
-                  <span class="filter__label">BT</span>
-                </label>
+              <div class="filters__chip">
+                <input
+                  class="filter__checkbox js-filter-provider"
+                  id="plusnet"
+                  name="filter-provider"
+                  type="checkbox"
+                  value="42"
+                  disabled="disabled"
+                />
+                <label for="plusnet">Plusnet</label>
+              </div>
 
-                <label class="filter">
-                  <input
-                    class="filter__checkbox js-filter-provider"
-                    name="filter-provider"
-                    type="checkbox"
-                    value="42"
-                    disabled="disabled"
-                  />
-                  <span class="filter__label">Plusnet</span>
-                </label>
+              <div class="filters__chip">
+                <input
+                  class="filter__checkbox js-filter-provider"
+                  id="origin-broadband"
+                  name="filter-provider"
+                  type="checkbox"
+                  value="116"
+                  disabled="disabled"
+                />
+                <label for="origin-broadband">Origin Broadband</label>
+              </div>
 
-                <label class="filter">
-                  <input
-                    class="filter__checkbox js-filter-provider"
-                    name="filter-provider"
-                    type="checkbox"
-                    value="116"
-                    disabled="disabled"
-                  />
-                  <span class="filter__label">Origin Broadband</span>
-                </label>
+              <div class="filters__chip">
+                <input
+                  class="filter__checkbox js-filter-provider"
+                  id="ee"
+                  name="filter-provider"
+                  type="checkbox"
+                  value="48"
+                  disabled="disabled"
+                />
+                <label for="ee">EE</label>
+              </div>
 
-                <label class="filter">
-                  <input
-                    class="filter__checkbox js-filter-provider"
-                    name="filter-provider"
-                    type="checkbox"
-                    value="48"
-                    disabled="disabled"
-                  />
-                  <span class="filter__label">EE</span>
-                </label>
-
-                <label class="filter">
-                  <input
-                    class="filter__checkbox js-filter-provider"
-                    name="filter-provider"
-                    type="checkbox"
-                    value="1"
-                    disabled="disabled"
-                  />
-                  <span class="filter__label">Sky</span>
-                </label>
+              <div class="filters__chip">
+                <input
+                  class="filter__checkbox js-filter-provider"
+                  id="sky"
+                  name="filter-provider"
+                  type="checkbox"
+                  value="1"
+                  disabled="disabled"
+                />
+                <label for="sky"> Sky </label>
               </div>
             </div>
           </div>
@@ -149,7 +148,7 @@
     <footer class="site-footer">
       <div class="site-trunk">
         <span class="site-footer__colophon"
-          >&copy; 2016-2019 Decision Technologies. All Rights Reserved.</span
+          >&copy; 2016-2021 Decision Technologies. All Rights Reserved.</span
         >
       </div>
     </footer>
