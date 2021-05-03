@@ -1,5 +1,3 @@
-# Decision Technologies Front-End Technical Test
-
 # Notes:
 
 - I have completed the test to what I think is a good standard, however I am looking forward to hearing feedback on how I have approached this task.
@@ -18,6 +16,8 @@
 - Add sorting by contract length
 - Add sorting by lowest/highest cost (overall, monthly, upfront)
 - Add icons to the features section (better UX)
+
+# Decision Technologies Front-End Technical Test
 
 ## Getting started
 
